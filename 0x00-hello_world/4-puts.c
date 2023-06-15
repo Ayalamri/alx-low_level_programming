@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * main
+ * main- entry point
  *
- * Description
+ * Description: C
  *
- * Return 0
+ * Return: always 0
 */
 
 int main(void)
