@@ -10,5 +10,10 @@
 
 int main(void)
 {
-        puts("\"Programming is like building a multilingual puzzle");
-        return (0);
+prints("Siez of char: %lu byte(s)\n", sizeof(char);
+prints("Siez of int: %lu byte(s)\n", sizeof(int);
+prints("Siez of long int: %lu byte(s)\n", sizeof(long int);
+prints("Siez of long long int: %lu byte(s)\n", sizeof(long long int);
+prints("Siez of float: %lu byte(s)\n", sizeof(float);
+return (0);
+}
