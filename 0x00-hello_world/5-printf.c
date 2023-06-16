@@ -1,15 +1,15 @@
 #include <stdio.h>
 
-/*i*
- * main - entry point
+/**
+ * main - Entry point
  *
- * Description: C
+ * Description: a C program
  *
- * Return: always 0
+ * Return: Always 0
 */
 
 int main(void)
 {
-    printf("with proper grammar, but the outcome is a piece of art,\n");
-    return (0);
+printf("with proper grammar, but the outcome is a piece of art,\n");
+return (0);
 }
