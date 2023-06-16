@@ -10,10 +10,10 @@
 
 int main(void)
 {
-prints("Siez of char: %lu byte(s)\n", sizeof(char);
-prints("Siez of int: %lu byte(s)\n", sizeof(int);
-prints("Siez of long int: %lu byte(s)\n", sizeof(long int);
-prints("Siez of long long int: %lu byte(s)\n", sizeof(long long int);
-prints("Siez of float: %lu byte(s)\n", sizeof(float);
+printf("Siez of char: %lu byte(s)\n", sizeof(char));
+printf("Siez of int: %lu byte(s)\n", sizeof(int));
+printf("Siez of long int: %lu byte(s)\n", sizeof(long int));
+printf("Siez of long long int: %lu byte(s)\n", sizeof(long long int));
+printf("Siez of float: %lu byte(s)\n", sizeof(float));
 return (0);
 }
