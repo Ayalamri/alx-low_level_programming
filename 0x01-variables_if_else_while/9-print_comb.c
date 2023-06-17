@@ -7,21 +7,11 @@
  */
 int main(void)
 {
-	int number1, number2;
-
-	for (number1 = 0; number1 < 10; number1++)
+	for (int i = 0; i < 11; i++)
 	{
-		for (number2 = number1; number2 < 10; number2++)
-		{
-			putchar(number1 + '0');
-			putchar(number2 + '0');
-
-			if (number1 != 9 || number2 != 9)
-			{
-				putchar(',');
-				putchar(' ');
-			}
-		}
+		putchar(',');
+		putchar(' ');
+		putchar(i + '0');
 	}
 
 	putchar('\n');
