@@ -6,15 +6,12 @@
  * Return: 0 on success
  */
 int main(void)
-{       int i;
-
-	for (i = 0; i < 10; i++)
-	{       putchar(i + '0');
-		putchar(',');
-		putchar(' ');
-	}
-
-	putchar('\n');
-
+{int i;
+putchar(0);
+for (i = 0; i < 10; i++)
+{putchar(',');
+putchar(' ');
+putchar(i + '0');
+}
 	return (0);
 }
