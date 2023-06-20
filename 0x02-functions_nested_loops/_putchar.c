@@ -1,15 +1,14 @@
+#include <unistd.h>
 #include "main.h"
 
 /**
  * main - Entry point
  *
- * Description: Prints _putchar
- *
  * Return: Always 0
-*/
+ */
 int main(void)
-{       char w;
-	_putchar(w);
+{
+	write(1, "_putchar\n", 9);
 
 	return (0);
 }
