@@ -2,13 +2,15 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * main - Entry point of the program
  *
  * Return: Always 0
  */
-int _putchar(void)
+int _putchar(char c)
 {
-	write(1, "_putchar\n", 9);
+    int l = length(c);
 
-	return (0);
+    write(1, c, length);
+
+    return (0);
 }
