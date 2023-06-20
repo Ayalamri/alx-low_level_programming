@@ -2,15 +2,14 @@
 #include "main.h"
 
 /**
- * main - Entry point of the program
+ * _putchar - writes the character c
+ * @c: the character to print
  *
  * Return: Always 0
  */
-int _putchar(char *c)
+int _putchar(char c)
 {
-    int l = length(c);
+	write(1, &c, 1);
 
-    write(1, &c, length);
-
-    return (0);
+	return (0);
 }
