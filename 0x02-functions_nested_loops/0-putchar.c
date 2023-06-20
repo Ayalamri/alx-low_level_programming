@@ -8,7 +8,7 @@
  * Return: Always 0
 */
 int main(void)
-{char ch = "_putchar";
+{char ch[] = "_putchar";
 	_putchar(ch);
 
 	_putchar("\n");
