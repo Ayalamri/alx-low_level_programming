@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include"main.h"
 
 /**
  * print_alphabet_10_times - Prints the alphabet in lowercase 10 times
