@@ -8,8 +8,8 @@
  * Return: Always 0
 */
 int main(void)
-{       char w = "_putchar";
-	_putchar(w);
+{   
+	_putchar();
 
 	return (0);
 }
