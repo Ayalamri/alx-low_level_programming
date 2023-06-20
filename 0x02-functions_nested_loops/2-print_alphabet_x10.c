@@ -5,7 +5,7 @@
  *
 */
 
-void print_alphabet_10_times(void)
+void print_alphabet_x10(void)
 {
 	int j, i;
 
