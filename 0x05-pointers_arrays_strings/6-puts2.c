@@ -16,10 +16,9 @@ void puts2(char *str)
 	if (str == NULL)
 		return;
 
-	while (str[i] != '\0')
+	for (int i = 0; str[i] != '\0'; i += 2)
 	{
-		_putchar(str[i]);
-		i += 2;
+		putchar(str[i]);
 	}
 
 	_putchar('\n');
