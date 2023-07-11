@@ -1,4 +1,5 @@
 #include"main.h"
+#include <stdio.h>
 
 /**
  * main - Entry point of the program
@@ -7,8 +8,9 @@
  * Return: 0 (Success)
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char const *argv[])
 {
-	_putchar(argc - 1);
+	(void)argc;
+	printf("%s\n", argv[0]);
 	return (0);
 }
