@@ -1,4 +1,4 @@
-#include"main.h"
+#include <stdio.h>
 
 /**
  * main - Entry point of the program
@@ -10,13 +10,11 @@
 
 int main(int argc, char *argv[])
 {
-	int i;
-
-	for (i = 0; i < argc; i++)
+	for (int i = 0; i < argc; i++)
 	{
-		_putchar(argv[i]);
-		_putchar('\n');
+		printf("%s\n", argv[i]);
 	}
 
 	return (0);
 }
+
