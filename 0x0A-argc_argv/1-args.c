@@ -1,4 +1,5 @@
 #include"main.h"
+#include <stdio.h>
 
 /**
  * main - Entry point of the program
@@ -10,11 +11,11 @@
 
 int main(int argc, char *argv[])
 {
-	int s;
-
-	s = argc - 1;
-
-	_putchar(s);
+	int x;
+	
+	x = argc - 1;
+	printf("%d\n", x);
 
 	return (0);
 }
+
