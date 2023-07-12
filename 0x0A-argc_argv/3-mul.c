@@ -1,4 +1,4 @@
-#include"main.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -11,20 +11,20 @@
 
 int main(int argc, char *argv[])
 {
-	int n1, n2, r;
+	int r, n1, n2;
 
 	if (argc != 3)
 	{
-		_putchar("Error");
-		_putchar('\n');
+		printf("Error\n");
 		return (1);
 	}
 
 	n1 = atoi(argv[1]);
 	n2 = atoi(argv[2]);
+
 	r = n1 * n2;
 
-	_putchar(r);
+	printf("%d\n", r);
 
 	return (0);
 }
