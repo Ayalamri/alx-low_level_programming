@@ -1,6 +1,6 @@
-#ifndef MY_CONSTANTS_H
-#define MY_CONSTANTS_H
+#ifndef _PI_H
+#define _PI_H
 
 #define PI 3.14159265359
 
-#endif // MY_CONSTANTS_H
+#endif // _PI_H
