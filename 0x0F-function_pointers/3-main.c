@@ -1,43 +1,30 @@
-#include "3-calc.h"
-#include <stdio.h>
-#include <stdlib.h>
+#include"3-calc.h"
+#include<stdio.h>
+#include<stdlib.h>
 
 /**
- * main - Entry point of the calculator program.
- * @argc: The number of command line arguments.
- * @argv: An array of pointers to command line arguments.
- * Return: 0 on success, 98 for incorrect number of arguments,
- *		99 for invalid operator, or 100 for division by zero.
+ * main - check the code for the school students.
+ * @argc: the number of args
+ * @argv: argument vector
+ * Return: Always 0.
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int num1, num2, result;
-	int (*func_ptr)(int, int);
+	int (*op_func)(int, int), a, b;
 
 	if (argc != 4)
-	{
-		printf("Error\n");
-		return (98);
-	}
+		printf("Error\n"), exit(98);
 
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[3]);
-	func_ptr = get_op_func(argv[2]);
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
 
-	if (func_ptr == NULL)
-	{
-		printf("Error\n");
-		return (99);
-	}
+	op_func = get_op_func(argv[2]);
+	if (!op_func)
+		printf("Error\n"), exit(99);
+	if (!b && (argv[2][0] == '/' || argv[2][0] == '%'))
+		printf("Error\n"), exit(100);
 
-	if ((*argv[2] == '/' || *argv[2] == '%') && num2 == 0)
-	{
-		printf("Error\n");
-		return (100);
-	}
-
-	result = func_ptr(num1, num2);
-	printf("%d\n", result);
+	printf("%d\n", op_func(a, b));
 	return (0);
 }
