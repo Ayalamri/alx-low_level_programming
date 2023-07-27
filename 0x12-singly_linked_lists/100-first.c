@@ -1,15 +1,13 @@
 #include <stdio.h>
 
-/**
- * pre_main_message - Prints the pre-main message.
- */
-void __attribute__((constructor)) pre_main_message(void)
-{
-	printf("You're beat! and yet, you must allow,\n
-	I bore my house upon my back!\n");
-}
+/* Function prototype for the constructor attribute */
+void print_message(void) __attribute__((constructor));
 
-int main(void)
+/**
+ * print_message - Function that prints a message before main is executed.
+ */
+void print_message(void)
 {
-	return (0);
+	printf("You're beat! and yet, you must allow,\n"
+	"I bore my house upon my back!\n");
 }
