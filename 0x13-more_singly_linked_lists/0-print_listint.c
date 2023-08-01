@@ -8,16 +8,16 @@
  *
  * Return: The number of nodes in the listint_t list.
  */
+
 size_t print_listint(const listint_t *h)
 {
-	size_t c = 0;
+	size_t f = 0;
 
-	while (h != NULL)
+	while (h)
 	{
 		printf("%d\n", h->n);
 		h = h->next;
-		c++;
+		f++;
 	}
-
-	return (c);
+	return (f);
 }
