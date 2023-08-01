@@ -24,7 +24,9 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *new, *t;
 
-	unsigned int co = 0;
+	unsigned int co;
+
+	co = 0;
 
 	if (head == NULL)
 		return (NULL);
