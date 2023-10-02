@@ -1,4 +1,4 @@
-#include"main.c"
+#include"main.h"
 
 /**
  * read_textfile - Reads and prints a text file to stdout.
