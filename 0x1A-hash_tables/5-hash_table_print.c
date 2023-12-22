@@ -2,13 +2,13 @@
 
 /**
  * hash_table_print - Prints a hash table
- * @ht: The hash table to print
+ * @ht: The hash table
  */
 void hash_table_print(const hash_table_t *ht)
 {
-	hash_node_t *node;
 	unsigned long int i;
-	int first = 1;
+	hash_node_t *current;
+	int flag = 0;
 
 	if (ht == NULL)
 		return;
@@ -16,14 +16,14 @@ void hash_table_print(const hash_table_t *ht)
 	printf("{");
 	for (i = 0; i < ht->size; i++)
 	{
-		node = ht->array[i];
-		while (node != NULL)
+		current = ht->array[i];
+		while (current)
 		{
-			if (!first)
+			if (flag == 1)
 				printf(", ");
-			printf("'%s': '%s'", node->key, node->value);
-			first = 0;
-			node = node->next;
+			printf("'%s': '%s'", current->key, current->value);
+			flag = 1;
+			current = current->next;
 		}
 	}
 	printf("}\n");
